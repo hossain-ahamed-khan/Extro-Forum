@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Forum</title>
+
+    <!------------------ google font - mulish  ------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- -------------- tailwind and daisyUI links ---------------->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .mulish-font {
+            font-family: "Mulish", sans-serif;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body class="mulish-font">
+    <!-------------------- navber --------------------->
+    <nav class="w-full">
+        <div class="w-4/5 mx-auto py-8 flex justify-between">
+            <div>
+                <h1 class="text-[#12132D] text-4xl font-black">ReTro</h1>
+            </div>
+            <div class="flex gap-8">
+                <ul class="flex gap-5">
+                    <li class="border rounded-full p-3"><img src="./images/home.png" alt=""></li>
+                    <li class="border rounded-full p-3"><img src="./images/edit.png" alt=""></li>
+                    <li class="border rounded-full p-3"><img src="./images/add.png" alt=""></li>
+                    <li class="border rounded-full p-3"><img src="./images/flag.png" alt=""></li>
+                </ul>
+
+                <button class="text-[#FFFFFF] text-xl font-bold py-3 px-6 rounded-full bg-[#797DFC]">Sign In</button>
+            </div>
+        </div>
+    </nav>
+
+    <!------------------- hero section ------------------>
+    <section class="w-full">
+        <div class="w-4/5 mx-auto bg-[#12132D] relative rounded-[32px]">
+            <div>
+                <img class="object-fill w-full" src="./images/bgbanner.png" alt="hero image">
+            </div>
+
+            <div class="flex gap-36 absolute top-36 left-36">
+                <div>
+                    <h1 class="text-white text-6xl font-black">Welcome to the <br> <span
+                            class="text-[#797DFC]">ReTro</span>
+                        Forum</h1>
+                    <p class="texy-[#FFFFFFCC] text-xl font-medium">Share your favorite opinion and win and wp forum
+                        coffee mug!</p>
+                    <input type="text" placeholder="Search here anything">
+                    <button class="bg-[#797DFC] text-white text-xl font-bold">Search</button>
+                </div>
+                <div class="bg-white text-[#12132DCC] font-medium text-2xl p-12">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Registered Users</td>
+                                <td>01</td>
+                            </tr>
+                            <tr>
+                                <td>Forum</td>
+                                <td>01</td>
+                            </tr>
+                            <tr>
+                                <td>Topics</td>
+                                <td>01</td>
+                            </tr>
+                            <tr>
+                                <td>Topics</td>
+                                <td>01</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!------------------ discuss section ------------------->
+    <section>
+        <div>
+            <h1>Let’s Discuss</h1>
+            <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features
+                allow for a streamlined.</p>
+
+            <div>
+                <div id="disscuss-posts">
+                    <div>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <div>
+                                <p># Music</p>
+                                <p>Author : Awlad Hossain</p>
+                            </div>
+                            <div>
+                                <h3>10 Kids Unaware of Their Halloween Costume</h3>
+                                <p>It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s
+                                    your prerogative</p>
+                            </div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <img src="" alt="">
+                                        <p>560</p>
+                                    </div>
+                                    <div>
+                                        <img src="" alt="">
+                                        <p>1568</p>
+                                    </div>
+                                    <div>
+                                        <img src="" alt="">
+                                        <p>5 min</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="mark-as-read-posts">
+                    <div>
+                        <h3>Title</h3>
+                        <p>Mark as read (4)</p>
+                    </div>
+                    <div>
+                        <div>
+                            <p>10 Kids Unaware of Their Halloween Costume</p>
+                        </div>
+                        <div>
+                            <img src="" alt="">
+                            <p>1,568</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------- join forum section  ---------------->
+    <section>
+        <div>
+            <h1>Join Our Forum</h1>
+            <p>Yes, you can run unit tests and view the results directly within the app. Yes, you can run unit tests and
+                view the results directly within the app. </p>
+            <button>Registered Now</button>
+        </div>
+
+    </section>
+
+    <!---------------- latest posts section  ------------------>
+    <section>
+        <div>
+            <div>
+                <h1>Latest Posts</h1>
+                <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing
+                    features allow for a streamlined .</p>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <div>
+                        <img src="" alt="">
+                        <p>29 January 2024</p>
+                    </div>
+                    <div>
+                        <h3>What will a mars habitat force that impact in our daily life!!!</h3>
+                        <p>Yes, you can run unit tests and view the results directly within the app. </p>
+                    </div>
+                    <div>
+                        <img src="" alt="">
+                        <p>Cameron Williamson</p>
+                        <p>Unknown</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!------------------------- footer ------------------------>
+    <footer>
+        <div>
+            <h1>ReTro</h1>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                Latin literature from 45 BC</p>
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <hr>
+            <p>2017, All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
