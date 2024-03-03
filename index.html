@@ -47,39 +47,44 @@
 
     <!------------------- hero section ------------------>
     <section class="w-full">
-        <div class="w-4/5 mx-auto bg-[#12132D] relative rounded-[32px]">
+        <div class="relative w-4/5 mx-auto bg-[#12132D] rounded-[32px]">
             <div>
-                <img class="object-fill w-full" src="./images/bgbanner.png" alt="hero image">
+                <img class="object-fill w-full h-[480px]" src="./images/bgbanner.png" alt="hero image">
             </div>
 
-            <div class="flex gap-36 absolute top-36 left-36">
-                <div>
+            <div class="absolute w-4/5 flex justify-between top-24 left-28 py-6">
+                <div class="w-2/3">
                     <h1 class="text-white text-6xl font-black">Welcome to the <br> <span
                             class="text-[#797DFC]">ReTro</span>
                         Forum</h1>
-                    <p class="texy-[#FFFFFFCC] text-xl font-medium">Share your favorite opinion and win and wp forum
+                    <p class="text-[#FFFFFFCC] text-xl font-medium my-8">Share your favorite opinion and win and wp
+                        forum
                         coffee mug!</p>
-                    <input type="text" placeholder="Search here anything">
-                    <button class="bg-[#797DFC] text-white text-xl font-bold">Search</button>
+                    <div class="relative w-2/4">
+                        <input class="w-full px-2 py-3 rounded-full" type="text" placeholder="Search here anything">
+                        <button
+                            class="absolute right-1 top-1.5 bg-[#797DFC] text-white text-xl font-bold px-6 py-1 rounded-full">Search</button>
+                    </div>
+
                 </div>
-                <div class="bg-white text-[#12132DCC] font-medium text-2xl p-12">
+                <div class="w-1/3 bg-white text-[#12132DCC] font-medium text-2xl p-8 rounded-[32px]">
                     <table>
                         <tbody>
                             <tr>
-                                <td>Registered Users</td>
-                                <td>01</td>
+                                <td class="pb-2 pr-4">Registered Users</td>
+                                <td class="pb-2">01</td>
                             </tr>
                             <tr>
-                                <td>Forum</td>
-                                <td>01</td>
+                                <td class="pb-2 pr-4">Forum</td>
+                                <td class="pb-2">01</td>
                             </tr>
                             <tr>
-                                <td>Topics</td>
-                                <td>01</td>
+                                <td class="pb-2 pr-4">Topics</td>
+                                <td class="pb-2">01</td>
                             </tr>
                             <tr>
-                                <td>Topics</td>
-                                <td>01</td>
+                                <td class="pb-2 pr-4">Topics</td>
+                                <td class="pb-2">01</td>
                             </tr>
                         </tbody>
                     </table>
@@ -90,107 +95,234 @@
     </section>
 
     <!------------------ discuss section ------------------->
-    <section>
-        <div>
-            <h1>Let’s Discuss</h1>
-            <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features
-                allow for a streamlined.</p>
+    <section class="w-full">
+        <div class="w-4/5 mx-auto my-24">
+            <div class="text-center mb-14">
+                <h1 class="text-[#12132D] font-black text-4xl mb-8">Let’s Discuss</h1>
+                <p class="w-1/2 mx-auto text-[#12132D99] font-normal text-lg">Yes, you can run unit tests and view the
+                    results
+                    directly within the app. The integrated testing
+                    features
+                    allow for a streamlined.</p>
+            </div>
 
-            <div>
-                <div id="disscuss-posts">
-                    <div>
-                        <div>
-                            <img src="" alt="">
+            <div class="flex gap-8">
+                <div id="disscuss-posts" class="w-2/3">
+                    <div class="flex gap-6 bg-[#F3F3F5] rounded-3xl p-8 mb-6">
+                        <div class="w-16">
+                            <img class="w-16 h-16 bg-white rounded-2xl" src="" alt="">
                         </div>
                         <div>
-                            <div>
+                            <div class="flex gap-6 text-[#12132DCC] font-semibold text-sm">
                                 <p># Music</p>
                                 <p>Author : Awlad Hossain</p>
                             </div>
-                            <div>
-                                <h3>10 Kids Unaware of Their Halloween Costume</h3>
-                                <p>It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s
+                            <div class="mt-2 mb-4 pb-4 border-b-2 border-dashed">
+                                <h3 class="text-[#12132D] font-bold text-xl">10 Kids Unaware of Their Halloween Costume
+                                </h3>
+                                <p class="text-[#12132D99] font-normal text-base mt-4">It’s one thing to subject
+                                    yourself to
+                                    ha Halloween costume mishap because, hey that’s
+                                    your prerogative. costume mishap because, hey that’s
                                     your prerogative</p>
                             </div>
-                            <div>
-                                <div>
-                                    <div>
-                                        <img src="" alt="">
+                            <div class="flex justify-between">
+                                <div class="flex gap-10">
+                                    <div class="flex gap-3">
+                                        <img src="./images/comments.png" alt="">
                                         <p>560</p>
                                     </div>
-                                    <div>
-                                        <img src="" alt="">
+                                    <div class="flex gap-3">
+                                        <img src="./images/views.png" alt="">
                                         <p>1568</p>
                                     </div>
-                                    <div>
-                                        <img src="" alt="">
+                                    <div class="flex gap-3">
+                                        <img src="./images/clock.png" alt="">
                                         <p>5 min</p>
                                     </div>
                                 </div>
                                 <div>
-                                    <img src="" alt="">
+                                    <img src="./images/mark as read.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 bg-[#F3F3F5] rounded-3xl p-8 mb-6">
+                        <div class="w-16">
+                            <img class="w-16 h-16 bg-white rounded-2xl" src="" alt="">
+                        </div>
+                        <div>
+                            <div class="flex gap-6 text-[#12132DCC] font-semibold text-sm">
+                                <p># Music</p>
+                                <p>Author : Awlad Hossain</p>
+                            </div>
+                            <div class="mt-2 mb-4 pb-4 border-b-2 border-dashed">
+                                <h3 class="text-[#12132D] font-bold text-xl">10 Kids Unaware of Their Halloween Costume
+                                </h3>
+                                <p class="text-[#12132D99] font-normal text-base mt-4">It’s one thing to subject
+                                    yourself to
+                                    ha Halloween costume mishap because, hey that’s
+                                    your prerogative. costume mishap because, hey that’s
+                                    your prerogative</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-10">
+                                    <div class="flex gap-3">
+                                        <img src="./images/comments.png" alt="">
+                                        <p>560</p>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <img src="./images/views.png" alt="">
+                                        <p>1568</p>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <img src="./images/clock.png" alt="">
+                                        <p>5 min</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="./images/mark as read.png" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <div id="mark-as-read-posts">
-                    <div>
-                        <h3>Title</h3>
-                        <p>Mark as read (4)</p>
-                    </div>
-                    <div>
-                        <div>
-                            <p>10 Kids Unaware of Their Halloween Costume</p>
+                <div class="w-1/3">
+                    <div class="w-full bg-[#12132D0D] rounded-3xl p-6">
+                        <div class="w-full flex justify-between mb-4">
+                            <h3 class="w-2/5 text-[#12132D] font-bold text-xl">Title</h3>
+                            <div class="w-3/5 flex justify-end gap-2">
+                                <img src="./images/signs.png" alt="">
+                                <p>Mark as read <span>(4)</span></p>
+                            </div>
                         </div>
-                        <div>
-                            <img src="" alt="">
-                            <p>1,568</p>
-                        </div>
-                    </div>
+                        <div id="mark-as-read-posts" class="w-full">
+                            <div class="w-full flex bg-white rounded-2xl p-4 mb-4">
+                                <p class="w-2/3 text-[#12132D] font-semibold text-base">10 Kids Unaware of Their
+                                    Halloween
+                                    Costume</p>
+                                <div class="w-1/3 flex items-center justify-end gap-2">
+                                    <img class="w-8 h-7" src="./images/views.png" alt="">
+                                    <p>1,568</p>
+                                </div>
+                            </div>
 
+                            <div class="w-full flex bg-white rounded-2xl p-4 mb-4">
+                                <p class="w-2/3 text-[#12132D] font-semibold text-base">10 Kids Unaware of Their
+                                    Halloween
+                                    Costume</p>
+                                <div class="w-1/3 flex items-center justify-end gap-2">
+                                    <img class="w-8 h-7" src="./images/views.png" alt="">
+                                    <p>1,568</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!---------------- join forum section  ---------------->
-    <section>
-        <div>
-            <h1>Join Our Forum</h1>
-            <p>Yes, you can run unit tests and view the results directly within the app. Yes, you can run unit tests and
-                view the results directly within the app. </p>
-            <button>Registered Now</button>
+    <section class="w-full">
+        <div class="w-4/5 h-96 mx-auto bg-[#12132D] rounded-[32px] mb-24">
+            <div class="w-full flex p-8">
+                <div class="w-3/5 p-8">
+                    <h1 class="text-white font-black text-4xl">Join Our Forum</h1>
+                    <p class="text-[#FFFFFFCC] font-normal text-lg my-6">Yes, you can run unit tests and view the
+                        results
+                        directly within the app. Yes, you can run unit
+                        tests and
+                        view the results directly within the app. </p>
+                    <button class="text-white font-bold text-xl bg-[#797DFC] px-8 py-4 rounded-full">Registered
+                        Now</button>
+                </div>
+                <div class="w-2/5 flex justify-end">
+                    <img src="./images/joinforum.png" alt="">
+                </div>
+            </div>
         </div>
-
     </section>
 
     <!---------------- latest posts section  ------------------>
-    <section>
-        <div>
-            <div>
-                <h1>Latest Posts</h1>
-                <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing
+    <section class="w-full">
+        <div class="w-4/5 mx-auto mb-24">
+            <div class="text-center mb-12">
+                <h1 class="text-[#12132D] font-black text-4xl">Latest Posts</h1>
+                <p class="w-1/2 mx-auto text-[#12132D99] font-normal text-lg mt-6">Yes, you can run unit tests and view
+                    the results
+                    directly within the app. The integrated testing
                     features allow for a streamlined .</p>
             </div>
-            <div>
-                <div>
+            <div id="latest-posts" class="w-full flex gap-6">
+                <div class="w-1/3 border rounded-3xl p-6">
                     <div>
-                        <img src="" alt="">
+                        <img class="w-full h-48 bg-[#12132D0D] rounded-2xl object-fill" src="" alt="">
                     </div>
-                    <div>
-                        <img src="" alt="">
+                    <div class="flex gap-2 my-3">
+                        <img src="./images/calender.png" alt="">
                         <p>29 January 2024</p>
                     </div>
                     <div>
-                        <h3>What will a mars habitat force that impact in our daily life!!!</h3>
-                        <p>Yes, you can run unit tests and view the results directly within the app. </p>
+                        <h3 class="text-[#12132D] font-extrabold text-lg">What will a mars habitat force that impact in
+                            our daily life!!!</h3>
+                        <p class="text-[#12132D99] font-normal text-base my-4">Yes, you can run unit tests and view the
+                            results directly within the app. </p>
+                    </div>
+                    <div class="flex gap-4">
+                        <img class="w-10 h-10 rounded-full bg-slate-500" src="" alt="">
+                        <div>
+                            <p class="text-[#12132D] text-base font-bold">Cameron Williamson</p>
+                            <p class="text-[#12132D99] text-sm font-normal">Unknown</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-1/3 border rounded-3xl p-6">
+                    <div>
+                        <img class="w-full h-48 bg-[#12132D0D] rounded-2xl object-fill" src="" alt="">
+                    </div>
+                    <div class="flex gap-2 my-3">
+                        <img src="./images/calender.png" alt="">
+                        <p>29 January 2024</p>
                     </div>
                     <div>
-                        <img src="" alt="">
-                        <p>Cameron Williamson</p>
-                        <p>Unknown</p>
+                        <h3 class="text-[#12132D] font-extrabold text-lg">What will a mars habitat force that impact in
+                            our daily life!!!</h3>
+                        <p class="text-[#12132D99] font-normal text-base my-4">Yes, you can run unit tests and view the
+                            results directly within the app. </p>
+                    </div>
+                    <div class="flex gap-4">
+                        <img class="w-10 h-10 rounded-full bg-slate-500" src="" alt="">
+                        <div>
+                            <p class="text-[#12132D] text-base font-bold">Cameron Williamson</p>
+                            <p class="text-[#12132D99] text-sm font-normal">Unknown</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-1/3 border rounded-3xl p-6">
+                    <div>
+                        <img class="w-full h-48 bg-[#12132D0D] rounded-2xl object-fill" src="" alt="">
+                    </div>
+                    <div class="flex gap-2 my-3">
+                        <img src="./images/calender.png" alt="">
+                        <p>29 January 2024</p>
+                    </div>
+                    <div>
+                        <h3 class="text-[#12132D] font-extrabold text-lg">What will a mars habitat force that impact in
+                            our daily life!!!</h3>
+                        <p class="text-[#12132D99] font-normal text-base my-4">Yes, you can run unit tests and view the
+                            results directly within the app. </p>
+                    </div>
+                    <div class="flex gap-4">
+                        <img class="w-10 h-10 rounded-full bg-slate-500" src="" alt="">
+                        <div>
+                            <p class="text-[#12132D] text-base font-bold">Cameron Williamson</p>
+                            <p class="text-[#12132D99] text-sm font-normal">Unknown</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -200,19 +332,21 @@
     </section>
 
     <!------------------------- footer ------------------------>
-    <footer>
-        <div>
-            <h1>ReTro</h1>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+    <footer class="w-full bg-[#F3F3F5]">
+        <div class="w-4/5 mx-auto text-center py-16">
+            <h1 class="text-[#12132D] text-4xl font-black">ReTro</h1>
+            <p class="w-1/2 mx-auto text-[#12132DB3] text-base font-normal mt-4">Contrary to popular belief, Lorem Ipsum
+                is not
+                simply
+                random text. It has roots in a piece of classical
                 Latin literature from 45 BC</p>
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="flex gap-6 justify-center my-6">
+                <img src="./images/fb.png" alt="">
+                <img src="./images/instagram.png" alt="">
+                <img src="./images/github.png" alt="">
             </div>
             <hr>
-            <p>2017, All Rights Reserved.</p>
+            <p class="text-[#12132D80] text-base font-light mt-6">2017, All Rights Reserved.</p>
         </div>
 
     </footer>
