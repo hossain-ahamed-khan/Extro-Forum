@@ -15,8 +15,9 @@ const displayposts = posts => {
         const postCard = document.createElement('div');
         postCard.classList = `w-full flex gap-2 lg:gap-4 bg-[#F3F3F5] rounded-3xl p-4 lg:p-8 mb-6`;
         postCard.innerHTML = `
-            <div class="w-2/12 lg:w-1/12">
+            <div class="w-2/12 lg:w-1/12 relative">
                 <img class="w-full h-14 lg:h-16 bg-white rounded-lg lg:rounded-2xl" src="${post.image}" alt="">
+                <div class="w-5 h-5 absolute -top-2 -right-2 border-2 border-white rounded-full bg-[green]"></div>
             </div>
             <div class="w-10/12 lg:w-11/12">
                 <div class="flex gap-6 text-[#12132DCC] font-semibold text-sm">
@@ -51,6 +52,7 @@ const displayposts = posts => {
 
         `
         postContainer.appendChild(postCard);
+
     });
 
     // -------stop loading spinner--------
@@ -61,6 +63,9 @@ const displayposts = posts => {
 }
 
 loadpost();
+
+
+
 
 
 
