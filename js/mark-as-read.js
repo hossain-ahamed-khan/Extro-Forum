@@ -4,11 +4,12 @@ const handleMarkAsRead = async (id) => {
     const data = await res.json();
     const posts = data.posts;
 
+    let count = 0;
+
     posts.forEach(post => {
-        // const count = 0;
 
         if (post.id === id) {
-            // count += 1;
+            count += 1;
             const markAsReadContainer = document.getElementById('mark-as-read-posts');
             const readPost = document.createElement('div');
             readPost.classList = `w-full flex bg-white rounded-2xl p-4 mb-4`;
@@ -20,9 +21,15 @@ const handleMarkAsRead = async (id) => {
                     </div>
         `
             markAsReadContainer.appendChild(readPost);
+
+
+            const readCount = document.getElementById("read-count");
+            const countText = readCount.innerText;
+            const countInt = parseInt(countText);
+            const sum = countInt + count;
+            readCount.innerText = sum;
         }
 
-        // const readCount = document.getElementById("read-count");
-        // readCount.innerText = count;
+
     });
 }
