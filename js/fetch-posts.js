@@ -51,9 +51,12 @@ const displayposts = posts => {
 
         `
         postContainer.appendChild(postCard);
-
-
     });
+
+    // -------stop loading spinner--------
+    setTimeout(() => {
+        toggleSpinner(false);
+    }, "2000");
 
 }
 

@@ -6,7 +6,23 @@ const loadSearchPost = async (searchText) => {
 }
 
 const handleSearch = () => {
+
+    toggleSpinner(true);
+
     const searchField = document.getElementById('search-field');
     const searchText = searchField.value;
     loadSearchPost(searchText);
+}
+
+
+// ------toggle spinner--------
+
+const toggleSpinner = (isLoading) => {
+    const loadingSpinner = document.getElementById('loading-spinner');
+    if (isLoading) {
+        loadingSpinner.classList.remove('hidden');
+    }
+    else {
+        loadingSpinner.classList.add('hidden');
+    }
 }
