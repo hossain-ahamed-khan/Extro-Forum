@@ -44,7 +44,7 @@ const displayposts = posts => {
                         </div>
                     </div>
                     <div>
-                    <button onclick="handleMarkAsRead()"><img src="./images/mark as read.png" alt=""></button>
+                    <button onclick="handleMarkAsRead(${post.id})"><img src="./images/mark as read.png" alt=""></button>
                     </div>
                 </div>
             </div>
