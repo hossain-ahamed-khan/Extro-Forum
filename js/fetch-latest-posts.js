@@ -8,9 +8,8 @@ const displayLatestPost = (latestPosts) => {
     const latestPostContainer = document.getElementById('latest-posts');
 
     latestPosts.forEach(latestPost => {
-        console.log(latestPost);
         const latestPostCard = document.createElement('div');
-        latestPostCard.classList = `w-1/3 border flex flex-col justify-between rounded-3xl p-6`;
+        latestPostCard.classList = `w-full lg:w-1/3 h-[520px] border flex flex-col justify-between rounded-3xl p-6`;
         latestPostCard.innerHTML = `
         
             <div>

@@ -28,54 +28,64 @@
 <body class="mulish-font">
     <!-------------------- navber --------------------->
     <nav class="w-full">
-        <div class="w-4/5 mx-auto py-8 flex justify-between">
+        <div class="w-11/12 lg:w-4/5 mx-auto py-4 lg:py-6 flex justify-between">
             <div>
-                <h1 class="text-[#12132D] text-4xl font-black">ReTro</h1>
+                <h1 class="text-[#12132D] text-3xl lg:text-4xl font-black">ExTro</h1>
             </div>
-            <div class="flex gap-8">
-                <div class="flex gap-5">
-                    <div class="tooltip tooltip-top" data-tip="Home">
-                        <button class="btn border rounded-full p-3"><img src="./images/home.png" alt=""></button>
+            <div class="flex gap-2 lg:gap-8">
+                <div class="flex gap-1 lg:gap-5">
+                    <div class="tooltip tooltip-bottom" data-tip="Home">
+                        <button class="btn border rounded-full py-0 lg:py-3 px-2 lg:px-3"><img class="h-4 lg:h-full"
+                                src="./images/home.png" alt=""></button>
                     </div>
-                    <div class="tooltip tooltip-top" data-tip="Edit">
-                        <button class="btn border rounded-full p-3"><img src="./images/edit.png" alt=""></button>
+                    <div class="tooltip tooltip-bottom" data-tip="Edit">
+                        <button class="btn border rounded-full py-0 lg:py-3 px-2 lg:px-3"><img class="h-4 lg:h-full"
+                                src="./images/edit.png" alt=""></button>
                     </div>
-                    <div class="tooltip tooltip-top" data-tip="Add">
-                        <button class="btn border rounded-full p-3"><img src="./images/add.png" alt=""></button>
+                    <div class="tooltip tooltip-bottom" data-tip="Add">
+                        <button class="btn border rounded-full py-0 lg:py-3 px-2 lg:px-3"><img class="h-4 lg:h-full"
+                                src="./images/add.png" alt=""></button>
                     </div>
-                    <div class="tooltip tooltip-top" data-tip="Flag">
-                        <button class="btn border rounded-full p-3"><img src="./images/flag.png" alt=""></button>
+                    <div class="tooltip tooltip-bottom" data-tip="Flag">
+                        <button class="btn border rounded-full py-0 lg:py-3 px-2 lg:px-3"><img class="h-4 lg:h-full"
+                                src="./images/flag.png" alt=""></button>
                     </div>
                 </div>
 
-                <button class="text-[#FFFFFF] text-xl font-bold py-3 px-6 rounded-full bg-[#797DFC]">Sign In</button>
+                <button
+                    class="text-[#FFFFFF] text-base lg:text-xl font-medium lg:font-bold py-0 lg:py-2 px-3 lg:px-6 rounded-full bg-[#797DFC]">Sign
+                    In</button>
             </div>
         </div>
     </nav>
 
     <!------------------- hero section ------------------>
     <section class="w-full">
-        <div class="relative w-4/5 mx-auto bg-[#12132D] rounded-[32px]">
+        <div class="relative w-11/12 lg:w-4/5 mx-auto bg-[#12132D] rounded-[32px]">
             <div>
                 <img class="object-fill w-full h-[480px]" src="./images/bgbanner.png" alt="hero image">
             </div>
 
-            <div class="absolute w-4/5 flex justify-between top-24 left-28 py-6">
-                <div class="w-2/3">
-                    <h1 class="text-white text-6xl font-black">Welcome to the <br> <span
-                            class="text-[#797DFC]">ReTro</span>
+            <div
+                class="absolute w-4/5 flex flex-col lg:flex-row justify-between top-6 lg:top-24 left-10 lg:left-28 py-3 lg:py-6 gap-4 lg:gap-0">
+                <div class="w-full lg:w-2/3">
+                    <h1 class="text-white text-3xl lg:text-6xl font-black">Welcome to the <br> <span
+                            class="text-[#797DFC]">ExTro</span>
                         Forum</h1>
-                    <p class="text-[#FFFFFFCC] text-xl font-medium my-8">Share your favorite opinion and win and wp
+                    <p class="text-[#FFFFFFCC] text-base lg:text-xl font-medium my-4 lg:my-8">Share your favorite
+                        opinion and win and wp
                         forum
                         coffee mug!</p>
-                    <div class="relative w-2/4">
-                        <input class="w-full px-2 py-3 rounded-full" type="text" placeholder="Search here anything">
-                        <button
-                            class="absolute right-1 top-1.5 bg-[#797DFC] text-white text-xl font-bold px-6 py-1 rounded-full">Search</button>
+                    <div class="relative w-full lg:w-2/4">
+                        <input id="search-field" class="w-full px-2 py-3 rounded-full" type="text"
+                            placeholder="Search here anything">
+                        <button onclick="handleSearch()"
+                            class="absolute right-1 top-1.5 bg-[#797DFC] text-white text-base lg:text-xl font-medium lg:font-bold px-4 lg:px-6 py-1 rounded-full">Search</button>
                     </div>
 
                 </div>
-                <div class="w-1/3 bg-white text-[#12132DCC] font-medium text-2xl p-8 rounded-[32px]">
+                <div
+                    class="w-full lg:w-1/3 bg-white text-[#12132DCC] font-medium text-lg lg:text-2xl p-4 lg:p-8 rounded-[32px]">
                     <table>
                         <tbody>
                             <tr>
@@ -104,49 +114,32 @@
 
     <!------------------ discuss section ------------------->
     <section class="w-full">
-        <div class="w-4/5 mx-auto my-24">
+        <div class="w-11/12 lg:w-4/5 mx-auto my-24">
             <div class="text-center mb-14">
                 <h1 class="text-[#12132D] font-black text-4xl mb-8">Let’s Discuss</h1>
-                <p class="w-1/2 mx-auto text-[#12132D99] font-normal text-lg">Yes, you can run unit tests and view the
+                <p class="w-full lg:w-1/2 mx-auto text-[#12132D99] font-normal text-lg">Yes, you can run unit tests and
+                    view the
                     results
                     directly within the app. The integrated testing
                     features
                     allow for a streamlined.</p>
             </div>
 
-            <div class="flex gap-8">
-                <div id="disscuss-posts" class="w-2/3">
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div id="disscuss-posts" class="w-full lg:w-2/3">
 
                 </div>
-                <div class="w-1/3">
+                <div class="w-full lg:w-1/3">
                     <div class="w-full bg-[#12132D0D] rounded-3xl p-6">
                         <div class="w-full flex justify-between mb-4">
                             <h3 class="w-2/5 text-[#12132D] font-bold text-xl">Title</h3>
                             <div class="w-3/5 flex justify-end gap-2">
                                 <img src="./images/signs.png" alt="">
-                                <p>Mark as read <span>(4)</span></p>
+                                <p>Mark as read <span>0</span></p>
                             </div>
                         </div>
                         <div id="mark-as-read-posts" class="w-full">
-                            <div class="w-full flex bg-white rounded-2xl p-4 mb-4">
-                                <p class="w-2/3 text-[#12132D] font-semibold text-base">10 Kids Unaware of Their
-                                    Halloween
-                                    Costume</p>
-                                <div class="w-1/3 flex items-center justify-end gap-2">
-                                    <img class="w-8 h-7" src="./images/views.png" alt="">
-                                    <p>1,568</p>
-                                </div>
-                            </div>
 
-                            <div class="w-full flex bg-white rounded-2xl p-4 mb-4">
-                                <p class="w-2/3 text-[#12132D] font-semibold text-base">10 Kids Unaware of Their
-                                    Halloween
-                                    Costume</p>
-                                <div class="w-1/3 flex items-center justify-end gap-2">
-                                    <img class="w-8 h-7" src="./images/views.png" alt="">
-                                    <p>1,568</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -157,19 +150,21 @@
     <!---------------- join forum section  ---------------->
     <section class="w-full">
         <div class="w-4/5 h-96 mx-auto bg-[#12132D] rounded-[32px] mb-24">
-            <div class="w-full flex p-8">
-                <div class="w-3/5 p-8">
-                    <h1 class="text-white font-black text-4xl">Join Our Forum</h1>
-                    <p class="text-[#FFFFFFCC] font-normal text-lg my-6">Yes, you can run unit tests and view the
+            <div class="w-full flex flex-col lg:flex-row p-2 lg:p-8">
+                <div class="w-full lg:w-3/5 p-8">
+                    <h1 class="text-white font-bold lg:font-black text-2xl lg:text-4xl">Join Our Forum</h1>
+                    <p class="text-[#FFFFFFCC] font-thin lg:font-normal text-xs lg:text-lg my-3 lg:my-6">Yes, you can
+                        run unit tests and view the
                         results
                         directly within the app. Yes, you can run unit
                         tests and
                         view the results directly within the app. </p>
-                    <button class="text-white font-bold text-xl bg-[#797DFC] px-8 py-4 rounded-full">Registered
+                    <button
+                        class="text-white font-normal lg:font-bold text-base lg:text-xl bg-[#797DFC] px-4 lg:px-8 py-2 lg:py-4 rounded-full">Registered
                         Now</button>
                 </div>
-                <div class="w-2/5 flex justify-end">
-                    <img src="./images/joinforum.png" alt="">
+                <div class="w-full lg:w-2/5 flex justify-center lg:justify-end">
+                    <img class="h-32 lg:h-full" src="./images/joinforum.png" alt="">
                 </div>
             </div>
         </div>
@@ -180,12 +175,14 @@
         <div class="w-4/5 mx-auto mb-24">
             <div class="text-center mb-12">
                 <h1 class="text-[#12132D] font-black text-4xl">Latest Posts</h1>
-                <p class="w-1/2 mx-auto text-[#12132D99] font-normal text-lg mt-6">Yes, you can run unit tests and view
+                <p
+                    class="w-full lg:w-1/2 mx-auto text-[#12132D99] font-extralight lg:font-normal text-base lg:text-lg mt-6">
+                    Yes, you can run unit tests and view
                     the results
                     directly within the app. The integrated testing
                     features allow for a streamlined .</p>
             </div>
-            <div id="latest-posts" class="w-full flex gap-6">
+            <div id="latest-posts" class="w-full flex flex-col lg:flex-row items-center gap-6">
 
             </div>
 
@@ -196,8 +193,9 @@
     <!------------------------- footer ------------------------>
     <footer class="w-full bg-[#F3F3F5]">
         <div class="w-4/5 mx-auto text-center py-16">
-            <h1 class="text-[#12132D] text-4xl font-black">ReTro</h1>
-            <p class="w-1/2 mx-auto text-[#12132DB3] text-base font-normal mt-4">Contrary to popular belief, Lorem Ipsum
+            <h1 class="text-[#12132D] text-4xl font-black">ExTro</h1>
+            <p class="w-full lg:w-1/2 mx-auto text-[#12132DB3] text-xs lg:text-base font-thin lg:font-normal mt-4">
+                Contrary to popular belief, Lorem Ipsum
                 is not
                 simply
                 random text. It has roots in a piece of classical
@@ -208,7 +206,7 @@
                 <img src="./images/github.png" alt="">
             </div>
             <hr>
-            <p class="text-[#12132D80] text-base font-light mt-6">2017, All Rights Reserved.</p>
+            <p class="text-[#12132D80] text-base font-light mt-6">2024, All Rights Reserved.</p>
         </div>
 
     </footer>
@@ -216,6 +214,8 @@
 
     <script src="./js/fetch-posts.js"></script>
     <script src="./js/fetch-latest-posts.js"></script>
+    <script src="./js/fetch-by-search.js"></script>
+    <script src="./js/mark-as-read.js"></script>
 </body>
 
 </html>
